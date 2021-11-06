@@ -27,6 +27,7 @@ export default {
     });
     this.platform = platform;
     this.initializeHereMap();
+    this.$store.dispatch('getBikes')
   },
   methods: {
     initializeHereMap() { // rendering map
