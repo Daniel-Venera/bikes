@@ -16,7 +16,7 @@ export default {
   data() {
     return {
       platform: null,
-      apikey: 'ixD6e52H8HjA21O3vpyrMLzqJ4b47gdIYQMSFYxQMFM'
+      apikey: process.env.VUE_APP_API_KEY
       // You can get the API KEY from developer.here.com
     };
   },
