@@ -1,24 +1,16 @@
 <template>
   <div id="app">
-    <HereMap  :center="center" />
+    <Map  />
   </div>
 </template>
 
 <script>
-import HereMap from "./components/HereMap.vue";
+import Map from "./components/Map.vue";
 
 export default {
   name: "App",
   components: {
-    HereMap,
+    Map,
   },
-  data(){
-    return {
-      center:{ 
-        lat: 40.730610, 
-        lng: -73.935242
-      }
-    }
-  }
 };
 </script>
