@@ -10,6 +10,7 @@
         class="form__input--upp"
         minlength="6"
         maxlength="6"
+        placeholder="XXXX12"
       />
     </div>
     <div class="form__input">
@@ -45,12 +46,16 @@
       <br />
       <input v-model="value.battery_level" type="number" min="0" max="100" />
     </div>
-    <button type="submit">Send</button>
+    <button type="submit">{{text}}</button>
   </form>
 </template>
 <script>
 export default {
   props: {
+    text: {
+      type: String,
+      default: 'Create'
+    },
     value: {
       type: Object,
       default: () => {
@@ -75,7 +80,7 @@ export default {
 </script>
 <style scoped>
 .form {
-  margin-top: 40px;
+  margin: 16px 0;
 }
 .form__input {
   margin-bottom: 16px;
