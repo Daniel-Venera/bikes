@@ -30,7 +30,6 @@ export default new Vuex.Store({
       axios
         .get("https://618515f123a2fe0017fff366.mockapi.io/bikes/" + bikeId) 
         .then((response) => {
-          console.log(response.data);
           commit("SET_BIKE", response.data);
         })
         .catch((error) => {
