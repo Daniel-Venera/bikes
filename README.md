@@ -1,4 +1,4 @@
-# map
+# bikes
 ## Project setup
 ```
 npm install
